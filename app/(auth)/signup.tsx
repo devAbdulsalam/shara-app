@@ -77,7 +77,9 @@ const forgetPassword = () => {
 	const handleLogin = () => {
 		router.navigate('/(auth)/login');
 	};
-
+	const handleGoogleAuth = () => {
+		console.log('handleGoogleAuth');
+	};
 	const handleShowPassword = () => setShowPassword(!showPassword);
 
 	const handleShowCPassword = () => setShowCPassword(!showCPassword);
@@ -184,18 +186,18 @@ const forgetPassword = () => {
 							/>
 							<View style={{ flex: 1, width: '100%', marginTop: 20 }}>
 								<CustomButton
-									text="Register"
-									onPress={handleSignup}
-									type="TERTIARY"
-									bgColor="#E7EAF4"
-									fgColor="#4765A9"
-								/>
-								<CustomButton
 									text="Already have Account? login"
 									onPress={handleLogin}
 									type="TERTIARY"
 									bgColor="#e3e3e3"
 									fgColor="#363636"
+								/>
+								<CustomButton
+									text="Sign in with Google"
+									onPress={handleGoogleAuth}
+									type="TERTIARY"
+									bgColor="#E7EAF4"
+									fgColor="#4A9"
 								/>
 							</View>
 						</View>
