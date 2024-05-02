@@ -18,8 +18,6 @@ export default function index() {
 			</View>
 			<Features />
 			<Promos />
-			<Features />
-			<Promos />
 		</ScrollView>
 	);
 }
